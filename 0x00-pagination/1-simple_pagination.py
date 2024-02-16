@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Task 1: Simple pagination.
-
-This module provides a Server class that can be used to paginate a database of popular baby names.
-It also includes a function to retrieve the index range from a given page and page size.
+Server class that used to paginate a database of popular baby names.
+Includes a function to retrieve the index range from a given
+page and page size.
 """
 
 import csv
@@ -18,7 +18,7 @@ def index_range(page: int, page_size: int) -> Tuple[int, int]:
         page_size (int): The number of items per page.
 
     Returns:
-        Tuple[int, int]: A tuple representing the start and end index of the page.
+        Tuple[int, int].
     """
     return ((page - 1) * page_size, ((page - 1) * page_size) + page_size)
 
@@ -50,12 +50,13 @@ class Server:
 
         Args:
             page (int, optional): The page number. Defaults to 1.
-            page_size (int, optional): The number of items per page. Defaults to 10.
+            page_size (int, optional): The number of items per page.
+            Defaults to 10.
 
         Returns:
-            List[List]: A list of rows representing the data on the requested page.
+            List[List]:.
         """
-        assert type(page) == int and type(page_size) == int
+        assert type(page) is int and type(page_size) is int
         assert page > 0 and page_size > 0
         start, end = index_range(page, page_size)
         data = self.dataset()
