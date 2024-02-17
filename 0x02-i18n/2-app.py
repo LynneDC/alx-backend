@@ -1,5 +1,19 @@
 #!/usr/bin/env python3
 '''Task 2: Get locale from request
+
+This script is a Flask application that handles internationalization (i18n) by 
+retrieving the locale from the request headers. It uses the Flask-Babel extension 
+and the Babel library to handle translations and language preferences.
+
+The main features of this script include:
+- Setting up the Flask application with the necessary configurations for i18n.
+- Defining a locale selector function that determines the best match for the user's
+ preferred language based on the available languages.
+- Implementing a default route that renders the homepage template.
+
+To run the application, execute this script directly.
+
+Author: [Your Name]
 '''
 
 from flask import Flask, render_template, request
