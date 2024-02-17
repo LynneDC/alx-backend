@@ -55,6 +55,7 @@ class FIFOCache(BaseCaching):
             self.cache_data[key] = item
 
     def get(self, key):
+<<<<<<< HEAD
         """return the value in self.cache_data linked to key
 
         Args:
@@ -63,3 +64,8 @@ class FIFOCache(BaseCaching):
         if key is None or key not in self.cache_data.keys():
             return None
         return self.cache_data.get(key)
+=======
+        '''return the value in `self.cache_data` linked to `key`
+        '''
+        return self.cache_data.get(key, None)
+>>>>>>> fa0c5efa2872370a171b9c2ba833f6cee192e224
