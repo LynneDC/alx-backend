@@ -4,10 +4,11 @@
 
 from flask import Flask, render_template, request
 from flask_babel import Babel
+from babel import Locale
+from babel.support import Translations
 
 
 class Config:
-    '''Config class'''
 
     DEBUG = True
     LANGUAGES = ["en", "fr"]
@@ -23,7 +24,7 @@ babel = Babel(app)
 
 @babel.localeselector
 def get_locale() -> str:
-    """Retrieves the locale for a web page.
+   """Retrieves the locale for a web page.
 
     Returns:
         str: best match
