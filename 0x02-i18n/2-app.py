@@ -9,6 +9,7 @@ from babel.support import Translations
 
 
 class Config:
+    """ class"""
 
     DEBUG = True
     LANGUAGES = ["en", "fr"]
