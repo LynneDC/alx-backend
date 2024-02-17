@@ -2,10 +2,8 @@
 '''Task 2: Get locale from request
 '''
 
-from flask import Flask, render_template, request
+from flask import Flask, request, render_template
 from flask_babel import Babel
-from babel import Locale
-from babel.support import Translations
 
 
 class Config:
