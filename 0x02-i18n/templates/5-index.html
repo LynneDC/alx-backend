@@ -8,9 +8,9 @@
 
 	    <p>
 	    	 {% if g.user %}
-		 	{{ _('logername=g.user.name) }}
+		 	{{ _('Welcome, ') }}{{ g.user.name }}
 		{% else %}
-	               {{ _('not_logged_in') }
+			{{ _('not_logged_in') }}
 	       	{% endif %}
 	   </p>
     </body>
