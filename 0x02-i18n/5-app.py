@@ -69,7 +69,7 @@ def index() -> str:
     return render_template("5-index.html")
 
 # uncomment this line and comment the @babel.localeselector
-# babel.init_app(app, locale_selector=get_locale)
+babel.init_app(app, locale_selector=get_locale)
 
 
 if __name__ == "__main__":
